@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body> 
+    <div class="page-container">
+            <header>
+        <div class="navbar opacity">
+            <div class="nav-logo box">
+                <img src="./image/AMAZON IMAGE.PNG" alt="logo" class="logo" >
+            </div>
+            <div class="nav-location box  ">
+                <div class="pin-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>
+                </div>
+                <span class="line-1">Deliver to </span>
+                <br>
+                <span class="line-2" >India</span>
+            </div>
+            
+            <div class="nav-search ">
+                <div class="dropdown">
+                    <!-- <label id="search" for="dropdown" class="dropdown"></label> -->
+                    <select name="dropdown" id="search" class="dropdown" >
+                    <option value="all">All</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Gadgets">Gadgets</option>
+                    <option value="Girl's Fashion">Girl's Fashion</option>
+                    <option value="Kindle Store">Kindle Store</option>
+                    <option value="Books">Books</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Tools and Home Improvement">Tools and Home Improvement</option>
+                </select>
+                </div>
+                <div>
+                    <div class="search" style="display: flex;">
+                        <input type="text" placeholder="Search Amazon.com" class="placeholder " >
+                        <div class="search-icon">
+                            <img src="./image/search.png" alt="">
+                        </div> 
+                        
+                    </div>
+                </div>               
+            </div>
+
+            <div class="nav-right">
+                <div class="box">
+                <div class="nav-country"  >
+                    <img src=".//image/flag.png" alt="" height="15px">  
+                 <span class="India"> EN</span>
+            </div>  
+         </div>       
+            </div>
+               <button class="sign-in">Sign In</button>
+               <div class="return-orders box">
+                <span class="returns">Returns</span>
+                <span class="orders">& orders</span>
+               </div>
+               <div class="box">
+                <div class="cart">
+                <img src="./image/cart.png" alt="cart" height="40px" >
+                <!-- <span class="cart">Cart</span> -->
+               </div>
+               </div>
+        </div>
+    </header>
+    <div class="header2 opacity">
+        <!-- javascript logic to make the background transparent  -->
+        <div class="menu box" onclick="document.getElementById('slide-box').style.visibility='visible'; " >
+            <img src="./image/menu.PNG" alt="menu" height="15px">
+            <span on>All</span>
+        </div>
+        <div class="header-2-options box" >
+            Today's Deals 
+        </div>
+        <div class="header-2-options box" >
+            Electronics 
+        </div>
+        <div class="header-2-options box" >
+            Mobiles
+        </div>
+        <div class="header-2-options box" >
+            Home & Kitchen
+        </div>
+        <div class="header-2-options box" >
+            Gift Ideas 
+        </div>
+        <div class="header-2-options box" >
+            Books
+        </div>
+        <div class="header-2-options box" >
+            Computers
+        </div>
+        <div class="header-2-options box" >
+            New Releases
+        </div>
+        <div class="header-2-options box" >
+            Amazon Pay
+        </div>
+        <div class="header-2-options box" >
+            Customer Services
+        </div>
+    </div>
+    <div id="slide-box">
+        <div class="slide-close-icon" onclick="document.getElementById('slide-box').style.visibility='hidden'; ">
+            <img src="./image/close-icon.png" alt="close-icon" height="48px">
+        </div>
+        <div class="slide-nav"> 
+            <img src="./image/login-icon.png" alt="icon" height="40px">
+            <div class="txt">Hello, Sign in?</div>
+        </div>
+        <div class="slide-box-content">
+            <ul type="none">
+                <li class="slide-box-content-heading"> <b>Digital Content & Devices</b></li>
+                <li ><a href="#"class="slide-box-content-list">Amazon Music</a></li>
+                <li><a href="#"class="slide-box-content-list">Kindle E-readers & books</a> </li>
+                <li><a href="#"class="slide-box-content-list">Amazon app-store</a> </li>
+            </ul>
+            <hr>
+            <ul type="none">
+                <li class="slide-box-content-heading"> <b>Shop by Department</b></li>
+                <li><a href="#"class="slide-box-content-list">Electronics</a> </li>
+                <li><a href="#"class="slide-box-content-list">Computers</a> </li>
+                <li><a href="#"class="slide-box-content-list">Smart Homes</a> </li>
+                <li><a href="#"class="slide-box-content-list">Arts and crafts</a> </li>
+            </ul>
+        </div>
+        
+    </div>
+    <!-- carousel -->
+        <img src="./image/img1.jpg" alt="img1" height="700px" width="100%" class="center-image">
+         <div class="arrow">
+            <div class="left-arrow"><img src="./image/left arrow.png" alt="" height="40px"></div>
+            <div class="right-arrow"><img src="./image/right arrow.png" alt="" height="33px"></div>
+         </div>
+    <!-- products -->
+         <div class="products">
+            <div class="products-box">
+                <a href="#"><img src="image/product1.png" alt="" height="400px" width="100%"></a>
+            </div>
+            <div class="products-box">
+                <a href="#"><img src="image/product2.png" alt="" height="400px" width="100%"></a>
+            </div>
+            <div class="products-box">
+                <a href="#"><img src="image/product3.png" alt="" height="400px" width="100%"></a>
+            </div>
+            <div class="products-box">
+                <a href="#"><img src="image/product4.png" alt="" height="400px" width="100%"></a>
+            </div>
+            <div class="products-box">
+                <a href="#"><img src="image/product5.png" alt="" height="400px" width="100%"></a>
+            </div>
+            <div class="products-box">
+                <a href="#"><img src="image/product6.png" alt="" height="400px" width="100%"></a>
+            </div>
+            <div class="products-box">
+                <a href="#"><img src="image/product7.png" alt="" height="400px" width="100%"></a>
+            </div>
+            <div class="products-box">
+                <a href="#"><img src="image/product8.png" alt="" height="400px" width="100%"></a>
+            </div>
+
+         </div>
+    <!-- grey-div -->
+         <div class="grey-div">
+         </div>
+    <!-- recommendation -->
+          <hr>
+          <div class="recommendation">
+            <div class="recommendation-content">
+                <p>See personalised recommendations</p>
+                <button class="sign-in" style="width: 200px; border-radius: 5px; border: 2px orange;" >Sign in</button>
+                <p style="font-size: 11px;">New Customer?
+                    <a href="#">Start here.</a>
+                </p>
+            </div>
+    
+          </div>
+        <hr>
+        <div class="back-to-top">
+            <a href="#" style="text-decoration: none;"><p style="color: white; ">Back to top</p></a>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer1 footer-content">
+                <b style="font-size: 14px; margin-left: 40px;">Get to Know Us</b>
+                <ul type="none">
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">About US</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Carrers</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Press Releases</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer2 footer-content">
+                <b style="font-size: 14px; margin-left: 40px;">Connect with Us</b>
+                <ul type="none">
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Facebook</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Twitter</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer3 footer-content">
+                <b style="font-size: 14px; margin-left: 40px;">Make Money with Us</b>
+                <ul type="none">
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Sell on  Amazon</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Sell under Amazon Accelerator</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Protect and Build Your Brand</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Amazon Global Selling</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Become an Affiliate</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Advertise Your Products</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Amazon Pay on Merchants</a></li>
+                </ul>
+            </div>
+            <div class="footer4 footer-content">
+                <b style="font-size: 14px; margin-left: 40px;">Let Us Help You</b>
+                <ul type="none">
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">COVID-19 and Amazon</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Your Account</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Returns Centre</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">100% Purchase Protection</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Amazon App Download</a></li>
+                    <li><a href="#" style="text-decoration: none; color:  rgb(223, 220, 220);">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- lastdiv -->
+        <div class="end">
+            <p>© Vanshika Verma <br>2024</p>
+        </div>
+
+
+
+
+
+      <script src="index.js"></script>  
+    </div>
+                                                                                                                  
+</body>
+</html>
